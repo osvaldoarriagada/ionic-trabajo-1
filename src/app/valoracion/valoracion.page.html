@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Valoración</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-searchbar animated="true" placeholder="Buscar película para valorar"></ion-searchbar>
+  <form>
+      <ion-item lines="full">
+      <ion-label position="floating">Comentarios</ion-label>
+      <ion-input type="Text input" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        
+        <ion-button [routerLink]="['/manitoarriba']" expand="block" color="success">Manito Arriba</ion-button>
+        <ion-button [routerLink]="['/manitoabajo']" expand="block" color="dark">Manito Abajo</ion-button>
+        <ion-button [routerLink]="['/home']" expand="block" color="dark">Cancelar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

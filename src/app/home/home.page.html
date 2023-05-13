@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      ValueMe!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <div class="ion-text-center">
+        <ion-text color="dark">
+          <h3>ValueMe!</h3>
+        </ion-text>
+        </div>
+        <ion-button [routerLink]="['/registration']" expand="block" color="primary">Registrar</ion-button>
+        <span class="already">¿Ya es usuario?</span>
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Iniciar sesión</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
